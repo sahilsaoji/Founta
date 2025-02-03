@@ -29,19 +29,21 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="hero">
-        <div className="hero-content">
-          <h1 className="hero-title">Event Planning Made Easy</h1>
-          <button
-            className="cta"
-            onClick={() =>
-              window.open('https://calendly.com', '_blank', 'noopener,noreferrer')
-            }
-          >
-            Schedule an Event
-          </button>
-        </div>
-      </section>
+    <section id="hero" className="hero">
+    <div className="hero-text">
+      <h1 className="hero-line-1">Connecting Ideas, Creating Memories</h1>
+      <h2 className="hero-line-2">Your Company's Event, Our Platform</h2>
+      <button
+        className="cta"
+        onClick={() =>
+          window.open('https://calendly.com', '_blank', 'noopener,noreferrer')
+        }
+      >
+      Schedule an Event
+      </button>
+    </div>
+    </section>
+
 
       {/* Why Founta Section */}
       <section id="why" className="section">
@@ -54,9 +56,29 @@ function App() {
         </p>
       </section>
 
+      {/* Why Founta Section */}
+      <section id="why" className="section">
+        <h2>How it works?</h2>
+        <p>
+          Founta is your trusted partner in corporate event planning. Our mission is to make organizing
+          events seamless, so you can focus on what matters most—building connections and creating
+          memories. Whether you’re planning team-building activities, corporate dinners, or outdoor
+          adventures, Founta has you covered.
+        </p>
+      </section>
+
       {/* About Section */}
       <section id="about" className="section">
         <h2>About Founta</h2>
+        <p>
+          Our goal is to take the hassle out of event planning by providing a one-stop platform for booking
+          venues, organizing activities, and ensuring that your event runs smoothly.
+        </p>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="section">
+        <h2>What we're building?</h2>
         <p>
           Our goal is to take the hassle out of event planning by providing a one-stop platform for booking
           venues, organizing activities, and ensuring that your event runs smoothly.
