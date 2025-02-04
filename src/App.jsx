@@ -7,6 +7,16 @@ function App() {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleEmailClick = () => {
+    const recipient = "Founta.ai@gmail.com";
+    const subject = "Founta Contact";
+    const body = "Hello, I'm interested in learning more about Founta.";
+      
+    // Construct mailto link
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="app">
       {/* Navbar */}
@@ -25,6 +35,7 @@ function App() {
               <li onClick={() => scrollToSection('why')}>Why Founta</li>
               <li onClick={() => scrollToSection('building')}>What We're Building</li>
               <li onClick={() => scrollToSection('about')}>About Us</li>
+              <li onClick={() => scrollToSection('contact')}>Contact Us</li>
             </ul>
           </nav>
         </div>
@@ -66,10 +77,10 @@ function App() {
       </section>
 
       {/* What We're Building Section */}
-      <section id="building" className="section">
+      <section id="building" className="section what-building">
         <h2>What We're Building</h2>
         <p>
-          At Founta, we are creating a platform designed to simplify corporate event planning for both managers and employees. Leveraging AI, our platform allows companies to seamlessly discover venues, book activities, and manage events all in one place. Vendors can list their services, making it easy for companies to find the perfect fit for their teams. We're building a space where corporate events aren't just logistics—they’re opportunities to foster growth, creativity, and collaboration.
+          At Founta, we are creating a platform designed to simplify corporate event planning for both managers and employees. Our platform helps companies seamlessly discover venues, book activities, and manage events all in one place. Using AI, we're advancing filtration and discovery, ensuring companies find options tailored to their specific needs. Additionally, there will be no more need for tedious conversation between vendors and companies, and we're utilizing an AI agent to handle the back-and-forth to accelerate decision-making. Vendors can list their services, making it easy for companies to find the perfect fit for their teams. We're building a space where corporate events aren’t just logistics—they’re opportunities to foster growth, creativity, and collaboration.
         </p>
       </section>
 
@@ -106,6 +117,17 @@ function App() {
 
           Through our experience managing and organizing events, we’ve seen how top managers recognize corporate events as one of the top five workplace values for improving team morale and overall satisfaction. Founta makes this process easier by streamlining event planning and fostering meaningful connections among employees.
         </p>
+      </section>
+
+      {/* Contact Us Section */}
+      <section id="contact" className="section">
+        <h2>Contact Us</h2>
+        <p>
+          We would love to hear from you—whether you're interested in learning more about Founta, are a vendor with a venue or event space, or a company looking to plan your next team-building event. Let us help you create memorable experiences.
+        </p>
+        <button className="cta" onClick={handleEmailClick}>
+          Email Us
+        </button>
       </section>
 
       {/* Footer */}
