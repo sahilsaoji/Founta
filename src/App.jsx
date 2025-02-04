@@ -62,16 +62,22 @@ function App() {
         <h2>Why Founta?</h2>
         <div className="why-cards">
           <div className="card">
-            <h3>Better Employee Satisfaction</h3>
-            <p>Companies that regularly host events see a 25% increase in employee satisfaction and retention rates, making corporate events a key factor for workplace happiness.</p>
+            <h3>Better Employee Engagement</h3>
+            <p>
+              Companies that host regular corporate events experience a <a href="https://www.gallup.com/workplace/236366/employee-engagement-drives-growth.aspx" target="_blank" rel="noopener noreferrer">24% higher employee engagement</a>, which directly impacts job satisfaction and overall retention.
+            </p>
           </div>
           <div className="card">
-            <h3>Stronger Team Connections</h3>
-            <p>According to a Gallup study, 70% of employees feel more connected to their peers after team-building activities, leading to improved collaboration and productivity.</p>
+            <h3>Stronger Team Collaboration</h3>
+            <p>
+              Team-building activities contribute to a <a href="https://www.forbes.com/sites/forbeshumanresourcescouncil/2022/02/07/why-team-building-matters/" target="_blank" rel="noopener noreferrer">50% improvement in communication</a> among employees, leading to better collaboration and problem-solving.
+            </p>
           </div>
           <div className="card">
-            <h3>Higher Company ROI</h3>
-            <p>Organizations with active event programs report a 15% boost in overall company performance by fostering better communication and creative problem-solving.</p>
+            <h3>Higher ROI from Events</h3>
+            <p>
+              Organizations with well-structured corporate event programs see a <a href="https://hbr.org/2020/05/the-surprising-power-of-peer-coaching" target="_blank" rel="noopener noreferrer">15% boost in productivity</a>, driven by improved team dynamics and creativity.
+            </p>
           </div>
         </div>
       </section>
@@ -89,25 +95,26 @@ function App() {
         <h2>How It Works</h2>
         <div className="how-cards">
           <div className="card">
-            <h3>1. Discover & Browse</h3>
+            <h3>1. Personalized In-Person Planning</h3>
             <p>
-              Explore a curated list of pre-vetted venues, team-building activities, and events tailored to your company's needs. Find the perfect fit for team dinners, outdoor adventures, or workshops. 
+              Our team works closely with you to understand your goals and customize the perfect event. From venue selection to activity planning, we handle every detail in person to ensure your team’s experience is exceptional.
             </p>
           </div>
           <div className="card">
-            <h3>2. Book & Organize</h3>
+            <h3>2. Seamless Transition to Our Platform</h3>
             <p>
-              Easily book events and manage logistics through our streamlined booking system. Select dates, view venue availability, and handle communication with vendors directly on the platform.
+              As we build and refine our platform, you’ll gradually be onboarded to an automated one-stop shop. With the same personalized touch and customer satisfaction, you’ll experience streamlined event planning where everything from booking to communication is managed effortlessly.
             </p>
           </div>
           <div className="card">
-            <h3>3. Engage & Enjoy</h3>
+            <h3>3. Engage, Enjoy, and Grow</h3>
             <p>
-              Ensure your team gets the most out of the event with features designed to increase engagement and satisfaction. Track participation, share updates, and gather feedback for future planning.
+              Once your events are booked and organized, all that’s left is to enjoy! Track your team’s engagement, gather feedback, and make every event memorable as we help your team grow closer and more productive.
             </p>
           </div>
         </div>
       </section>
+
 
       {/* About Founta Section */}
       <section id="about" className="section">
