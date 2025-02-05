@@ -68,13 +68,13 @@ function App() {
           <div className="card">
             <h3>Stronger Team Collaboration</h3>
             <p>
-              Team-building activities contribute to a <a href="https://www.forbes.com/sites/forbeshumanresourcescouncil/2022/02/07/why-team-building-matters/" target="_blank" rel="noopener noreferrer">50% improvement in communication</a> among employees, leading to better collaboration and problem-solving.
+              Team-building activities contribute to a <a href="https://www.mural.co/blog/team-building" target="_blank" rel="noopener noreferrer">50% improvement in communication</a> among employees, leading to better collaboration and problem-solving.
             </p>
           </div>
           <div className="card">
             <h3>Higher ROI from Events</h3>
             <p>
-              Organizations with well-structured corporate event programs see a <a href="https://hbr.org/2020/05/the-surprising-power-of-peer-coaching" target="_blank" rel="noopener noreferrer">15% boost in productivity</a>, driven by improved team dynamics and creativity.
+              Organizations with well-structured corporate event programs see a <a href="https://prismhq.com/increase-productivity-with-existing-workforce/" target="_blank" rel="noopener noreferrer">15% boost in productivity</a>, driven by improved team dynamics and creativity.
             </p>
           </div>
         </div>
