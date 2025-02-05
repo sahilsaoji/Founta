@@ -86,7 +86,7 @@ body {
 }
 
 .nav-links li:hover {
-  color: #8A2BE2;
+  color: #6D597A;
 }
 
 .hero {
@@ -132,7 +132,7 @@ body {
 }
 
 .cta:hover {
-  background-color: #8A2BE2;
+  background-color: #6D597A;
   transform: scale(1.05);
 }
 
@@ -260,7 +260,7 @@ body {
 }
 
 #contact .cta:hover {
-  background-color: #8A2BE2;
+  background-color: #6D597A;
   transform: scale(1.05);
 }
 
