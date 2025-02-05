@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import logo from './assets/FountaLogo.png';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   };
@@ -17,6 +19,10 @@ function App() {
     window.location.href = mailtoLink;
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="app">
       {/* Navbar */}
@@ -25,15 +31,35 @@ function App() {
           <div className="nav-brand">
             <img src={logo} alt="Founta Logo" className="nav-logo" />
           </div>
-          <nav>
+          <div className="hamburger" onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             <ul className="nav-links">
-              <li onClick={() => window.open('https://calendly.com', '_blank', 'noopener,noreferrer')}>
+              <li onClick={() => {
+                window.open('https://calendly.com', '_blank', 'noopener,noreferrer');
+                setIsMenuOpen(false);
+              }}>
                 Schedule an Event
               </li>
-              <li onClick={() => scrollToSection('why')}>Why Founta</li>
-              <li onClick={() => scrollToSection('building')}>What We're Building</li>
-              <li onClick={() => scrollToSection('about')}>About Us</li>
-              <li onClick={() => scrollToSection('contact')}>Contact Us</li>
+              <li onClick={() => {
+                scrollToSection('why');
+                setIsMenuOpen(false);
+              }}>Why Founta</li>
+              <li onClick={() => {
+                scrollToSection('building');
+                setIsMenuOpen(false);
+              }}>What We're Building</li>
+              <li onClick={() => {
+                scrollToSection('about');
+                setIsMenuOpen(false);
+              }}>About Us</li>
+              <li onClick={() => {
+                scrollToSection('contact');
+                setIsMenuOpen(false);
+              }}>Contact Us</li>
             </ul>
           </nav>
         </div>
