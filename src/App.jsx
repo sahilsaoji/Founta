@@ -39,7 +39,7 @@ function App() {
           <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             <ul className="nav-links">
               <li onClick={() => {
-                window.open('https://calendly.com', '_blank', 'noopener,noreferrer');
+                window.open('https://cal.com/founta-fy311y/30min', '_blank', 'noopener,noreferrer');
                 setIsMenuOpen(false);
               }}>
                 Schedule an Event
@@ -73,7 +73,7 @@ function App() {
           <button
             className="cta"
             onClick={() =>
-              window.open('https://calendly.com', '_blank', 'noopener,noreferrer')
+              window.open('https://cal.com/founta-fy311y/30min', '_blank', 'noopener,noreferrer')
             }
           >
             Schedule an Event
