@@ -27,10 +27,8 @@ function App() {
           </div>
           <nav>
             <ul className="nav-links">
-              <li>
-                <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
-                  Schedule an Event
-                </a>
+              <li onClick={() => window.open('https://calendly.com', '_blank', 'noopener,noreferrer')}>
+                Schedule an Event
               </li>
               <li onClick={() => scrollToSection('why')}>Why Founta</li>
               <li onClick={() => scrollToSection('building')}>What We're Building</li>
@@ -86,7 +84,7 @@ function App() {
       <section id="building" className="section what-building">
         <h2>What We're Building</h2>
         <p>
-          At Founta, we are creating a platform designed to simplify corporate event planning for both managers and employees. Our platform helps companies seamlessly discover venues, book activities, and manage events all in one place. Using AI, we're advancing filtration and discovery, ensuring companies find options tailored to their specific needs. Additionally, there will be no more need for tedious conversation between vendors and companies, and we're utilizing an AI agent to handle the back-and-forth to accelerate decision-making. Vendors can list their services, making it easy for companies to find the perfect fit for their teams. We're building a space where corporate events aren’t just logistics—they’re opportunities to foster growth, creativity, and collaboration.
+          At Founta, we are creating a platform designed to simplify corporate event planning for both managers and employees. Our platform helps companies seamlessly discover venues, book activities, and manage events all in one place. Using AI, we're advancing filtration and discovery, ensuring companies find options tailored to their specific needs. Additionally, there will be no more need for tedious conversation between vendors and companies, and we're utilizing an AI agent to handle the back-and-forth to accelerate decision-making. Vendors can list their services, making it easy for companies to find the perfect fit for their teams. We're building a space where corporate events aren't just logistics—they're opportunities to foster growth, creativity, and collaboration.
         </p>
       </section>
 
@@ -97,19 +95,19 @@ function App() {
           <div className="card">
             <h3>1. Personalized In-Person Planning</h3>
             <p>
-              Our team works closely with you to understand your goals and customize the perfect event. From venue selection to activity planning, we handle every detail in person to ensure your team’s experience is exceptional.
+              Our team works closely with you to understand your goals and customize the perfect event. From venue selection to activity planning, we handle every detail in person to ensure your team's experience is exceptional.
             </p>
           </div>
           <div className="card">
             <h3>2. Seamless Transition to Our Platform</h3>
             <p>
-              As we build and refine our platform, you’ll gradually be onboarded to an automated one-stop shop. With the same personalized touch and customer satisfaction, you’ll experience streamlined event planning where everything from booking to communication is managed effortlessly.
+              As we build and refine our platform, you'll gradually be onboarded to an automated one-stop shop. With the same personalized touch and customer satisfaction, you'll experience streamlined event planning where everything from booking to communication is managed effortlessly.
             </p>
           </div>
           <div className="card">
             <h3>3. Engage, Enjoy, and Grow</h3>
             <p>
-              Once your events are booked and organized, all that’s left is to enjoy! Track your team’s engagement, gather feedback, and make every event memorable as we help your team grow closer and more productive.
+              Once your events are booked and organized, all that's left is to enjoy! Track your team's engagement, gather feedback, and make every event memorable as we help your team grow closer and more productive.
             </p>
           </div>
         </div>
@@ -122,7 +120,7 @@ function App() {
         <p>
           Our team comes from a diverse background, having worked at companies like Workday, Cisco, Deloitte, and Morgan Stanley, as well as startups with fewer than 50 employees. We understand firsthand how valuable corporate events are, not only for building relationships but for improving quality of life for employees. 
 
-          Through our experience managing and organizing events, we’ve seen how top managers recognize corporate events as one of the top five workplace values for improving team morale and overall satisfaction. Founta makes this process easier by streamlining event planning and fostering meaningful connections among employees.
+          Through our experience managing and organizing events, we've seen how top managers recognize corporate events as one of the top five workplace values for improving team morale and overall satisfaction. Founta makes this process easier by streamlining event planning and fostering meaningful connections among employees.
         </p>
       </section>
 
