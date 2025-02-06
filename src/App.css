@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Prata&family=Lato:wght@300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 * {
   margin: 0;
@@ -57,6 +60,7 @@ body {
 }
 
 .nav-brand {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
 }
@@ -67,6 +71,7 @@ body {
 }
 
 .nav-links {
+  font-family: 'Montserrat', sans-serif;
   list-style: none;
   display: flex;
   gap: 2rem;  /* Increased from 2rem to add more space between links */
@@ -78,6 +83,7 @@ body {
   font-weight: 500;
   color: #EF6C6C;
   transition: color 0.3s ease;
+  font-family: 'Merriweather', serif;  /* Changed to Merriweather font */
 }
 
 .nav-links li a {
@@ -118,6 +124,7 @@ body {
 }
 
 .cta {
+  font-family: 'Merriweather', serif;
   display: inline-block;
   background-color: #EF6C6C;
   color: white;
@@ -145,6 +152,7 @@ body {
 }
 
 .section h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-family: 'Prata', serif;
   margin-bottom: 1.5rem;
@@ -191,6 +199,7 @@ body {
 }
 
 .card h3 {
+  font-family: 'Merriweather', serif;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
