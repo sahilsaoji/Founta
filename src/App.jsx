@@ -45,13 +45,13 @@ function App() {
                 Schedule an Event
               </li>
               <li onClick={() => {
+                scrollToSection('what');
+                setIsMenuOpen(false);
+              }}>What is Founta</li>
+              <li onClick={() => {
                 scrollToSection('why');
                 setIsMenuOpen(false);
               }}>Why Founta</li>
-              <li onClick={() => {
-                scrollToSection('building');
-                setIsMenuOpen(false);
-              }}>What We're Building</li>
               <li onClick={() => {
                 scrollToSection('about');
                 setIsMenuOpen(false);
@@ -81,6 +81,14 @@ function App() {
         </div>
       </section>
 
+      {/* What is Founta Section */}
+      <section id="what" className="section what-building">
+      <h2>What is Founta?</h2>
+      <p>
+        At Founta, we are creating a platform designed to simplify corporate event planning for managers, employees, and vendors. Our platform helps companies seamlessly discover venues, book activities, and manage events all in one place. Using AI, we're advancing filtration and discovery, ensuring companies find options tailored to their specific needs. Additionally, there will be no more need for tedious conversation between vendors and companies, and we're utilizing an AI agent to handle the back-and-forth to accelerate decision-making. Vendors can list their services, making it easy for companies to find the perfect fit for their teams. We're building a space where corporate events aren't just logistics—they're opportunities to foster growth, creativity, and collaboration.
+      </p>
+      </section>
+
       {/* Why Founta Section */}
       <section id="why" className="section">
         <h2>Why Founta?</h2>
@@ -105,40 +113,6 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* What We're Building Section */}
-      <section id="building" className="section what-building">
-        <h2>What We're Building</h2>
-        <p>
-          At Founta, we are creating a platform designed to simplify corporate event planning for both managers and employees. Our platform helps companies seamlessly discover venues, book activities, and manage events all in one place. Using AI, we're advancing filtration and discovery, ensuring companies find options tailored to their specific needs. Additionally, there will be no more need for tedious conversation between vendors and companies, and we're utilizing an AI agent to handle the back-and-forth to accelerate decision-making. Vendors can list their services, making it easy for companies to find the perfect fit for their teams. We're building a space where corporate events aren't just logistics—they're opportunities to foster growth, creativity, and collaboration.
-        </p>
-      </section>
-
-      {/* How It Works Section */}
-      <section id="how-it-works" className="section">
-        <h2>How It Works</h2>
-        <div className="how-cards">
-          <div className="card">
-            <h3>1. Personalized In-Person Planning</h3>
-            <p>
-              Our team works closely with you to understand your goals and customize the perfect event. From venue selection to activity planning, we handle every detail in person to ensure your team's experience is exceptional.
-            </p>
-          </div>
-          <div className="card">
-            <h3>2. Seamless Transition to Our Platform</h3>
-            <p>
-              As we build and refine our platform, you'll gradually be onboarded to an automated one-stop shop. With the same personalized touch and customer satisfaction, you'll experience streamlined event planning where everything from booking to communication is managed effortlessly.
-            </p>
-          </div>
-          <div className="card">
-            <h3>3. Engage, Enjoy, and Grow</h3>
-            <p>
-              Once your events are booked and organized, all that's left is to enjoy! Track your team's engagement, gather feedback, and make every event memorable as we help your team grow closer and more productive.
-            </p>
-          </div>
-        </div>
-      </section>
-
 
       {/* About Founta Section */}
       <section id="about" className="section">
